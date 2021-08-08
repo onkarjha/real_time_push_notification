@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<script src="push.min.js"></script>
+	<script src="serviceWorker.min.js"></script>
+	<script type="text/javascript">
+		Push.create("Title", {
+        body: "Body",
+    icon: '1.jpg',
+    timeout: 4000,
+    vibrate:[200,100],
+    onClick: function () {
+        window.focus();
+        this.close();
+    }
+});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
